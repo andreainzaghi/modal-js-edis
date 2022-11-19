@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <span class="icon icon-logo"></span>
+        <button
+          id="home-section"
+          class="btn btn-small btn-home headline btn-margin-left btn-selected"
+        >
+          <span class="not-displayed">Per la Casa</span>
+        </button>
+        <button
+          id="business-section"
+          class="btn btn-small headline btn-business"
+        >
+          <span class="not-displayed">Per il Business</span>
+        </button>
+      </div>
+      <div class="header-right">
+        <button class="btn btn-small headline btn-support" id="contatti">
+          <span class="not-displayed">Contatti e FAQ</span>
+        </button>
+        <button
+          class="btn btn-small headline btn-private-area"
+          id="home-section-area-privata"
+        >
+          <span class="not-displayed">Area Privata</span>
+        </button>
+        <button
+          id="search-section"
+          class="btn btn-rounded-small btn-search"
+        ></button>
+      </div>
+    </div>
+    <header>
+      <nav data-id="nav-casa">
+        <ul>
+          <li>
+            <a href="#" data-link="luce-gas" class="small-caps">LUCE & GAS</a>
+          </li>
+          <li>
+            <a href="#" data-link="protezione-interventi" class="small-caps"
+              >PROTEZIONE & INTERVENTI</a
+            >
+          </li>
+          <li>
+            <a href="#" data-link="caldaia-clima" class="small-caps"
+              >CALDAIA & CLIMA</a
+            >
+          </li>
+          <li>
+            <a href="#" data-link="energia-solare" class="small-caps"
+              >ENERGIA SOLARE</a
+            >
+          </li>
+          <li>
+            <a href="#" data-link="mobilita-elettrica" class="small-caps"
+              >MOBILIT&Aacute; ELETTRICA</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="hidden" data-id="nav-business">
+        <ul>
+          <li>
+            <a href="#" data-link="professionisti-imprese" class="small-caps"
+              >PROFESSIONISTI E IMPRESE</a
+            >
+          </li>
+          <li>
+            <a href="#" data-link="condomini" class="small-caps">CONDOMINI</a>
+          </li>
+          <li>
+            <a href="#" class="small-caps">PUBBLICHE AMMINISTRAZIONI</a>
+          </li>
+          <li>
+            <a href="#" class="small-caps">ENERGIA VERDE EDISON</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sub-menu hidden">
+        <header id="sub-menu">
+          <div data-link="luce-gas">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">OFFERTE EDISON</h4>
+              <button class="btn btn-small btn-luce-gas headline">
+                <span>Luce e Gas</span>
+              </button>
+              <button class="btn btn-small btn-luce headline">
+                <span>Luce</span>
+              </button>
+              <button class="btn btn-small btn-gas headline">
+                <span>Gas</span>
+              </button>
+              <button class="btn btn-small btn-cambiando-casa headline">
+                Stai cambiando casa?
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">PROTEZIONE</h4>
+              <div class="link-generale" style="margin-bottom: 40px">
+                <h4 class="headline">Edison casa relax</h4>
+                <p class="subhead">Assicurazione e assitenza 24/7</p>
+              </div>
+              <h4 class="heading-section">INTERVENTI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Intervento elettrodomestici</h4>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Intervento impianti idraulici</h4>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INCLUSO NELLE OFFERTE</h4>
+              <div class="link-generale">
+                <h4 class="headline">EDISONRisolve</h4>
+                <p class="subhead">Tutta l’assistenza per la tua casa</p>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">EdisonVille</h4>
+                <p class="subhead">Gioca e vinci ogni settimana</p>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">EDISON CoCo</h4>
+                <p class="subhead">Monitora i tuoi consumi e risparmia</p>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Porta un amico</h4>
+                <p class="subhead">Tanti vantaggi per te e i tuoi amici</p>
+              </div>
+            </div>
+            <div class="column-section img-column">
+              <div class="img-column-layout">
+                <section>
+                  <h4 class="title-h1">Stai cambiando casa?</h4>
+                  <p class="headline">
+                    Voltura, subentro, non sai di cosa si parla? Ti aiutiamo a
+                    capire di cosa hai bisogno.
+                  </p>
+                </section>
+                <button class="btn btn-small btn-bisogno headline">
+                  Scopri di cos'hai bisogno
+                </button>
+              </div>
+            </div>
+          </div>
+          <div data-link="protezione-interventi">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">PROTEZIONE CASA</h4>
+              <button class="btn btn-small btn-primary-orange headline">
+                <span>Edison casa Relax</span>
+              </button>
+              <button class="btn btn-small btn-primary-orange headline">
+                <span>Manutenzione Caldaia +</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INTERVENTI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Intervento impianti idraulici</h4>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Intervento elettrodomestici</h4>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Intervento sicurezza</h4>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">SERVIZI</h4>
+              <div class="link-generale">
+                <h4 class="headline">EDISONRisolve</h4>
+                <p class="subhead">Tutta l’assistenza per la tua casa</p>
+              </div>
+            </div>
+            <div class="column-section img-column">
+              <div class="img-column-layout">
+                <section>
+                  <h4 class="title-h1">Sei cliente Relax e hai un guasto?</h4>
+                  <p class="headline">
+                    Chiama il numero verde e ricevi supporto immediato
+                  </p>
+                </section>
+                <button class="btn btn-small btn-supporto headline">
+                  800.608.325
+                </button>
+              </div>
+            </div>
+          </div>
+          <div data-link="caldaia-clima">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">PRODOTTI EDISON</h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-caldaia headline"
+              >
+                <span>Caldaia</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-climatizzatore headline"
+              >
+                <span>Climatizzatore</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-solare-termico headline"
+              >
+                <span>Solare Termico</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-pompa-calore headline"
+              >
+                <span>Pompa di Calore</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">SERVIZI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Edison Manutenzione Caldaia+</h4>
+                <p class="subhead">
+                  Dalla manutenzione ordinaria al controllo fumi
+                </p>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INTERVENTI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Intervento impianti idraulici</h4>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Intervento elettrodomestici</h4>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INFORMAZIONI UTILI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Ecobonus 50% - 65%</h4>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Superbonus 110%</h4>
+              </div>
+            </div>
+          </div>
+          <div data-link="energia-solare">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">PRODOTTI EDISON</h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-fotovoltaico headline"
+              >
+                <span>Fotovoltaico</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-sistemi-accumulo headline"
+              >
+                <span>Sistemi di Accumulo</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-pompa-calore headline"
+              >
+                <span>Pompa di Calore</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-solare-termico headline"
+              >
+                <span>Solare Termico</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">PROTEZIONE</h4>
+              <div class="link-generale">
+                <h4 class="headline">Edison Fotovoltaico Relax</h4>
+                <p class="subhead">Assicurazione e assistenza 24/7</p>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INFORMAZIONI UTILI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Ecobonus 50% - 65%</h4>
+              </div>
+              <div class="link-generale">
+                <h4 class="headline">Superbonus 110%</h4>
+              </div>
+            </div>
+            <div class="column-section img-column">
+              <div class="img-column-layout">
+                <section>
+                  <h4 class="title-h1">
+                    Quanto risparmieresti con un impianto fotovoltaico?
+                  </h4>
+                </section>
+                <button
+                  class="btn btn-small btn-primary-orange btn-test-fotovoltaico headline"
+                >
+                  Inizia il test
+                </button>
+              </div>
+            </div>
+          </div>
+          <div data-link="mobilita-elettrica">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">
+                PRODOTTI E SERVIZI EDISON
+              </h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-wallbox headline"
+              >
+                <span>Wallbox</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-bici-monopattino headline"
+              >
+                <span>Bicicletta e Monopattino</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-moto-scooter headline"
+              >
+                <span>Moto e Scooter</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-auto-elettriche headline"
+              >
+                <span>Auto Elettriche</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INTERVENTI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Installazione della wallbox</h4>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INFORMAZIONI UTILI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Convenzione con Toyota</h4>
+              </div>
+            </div>
+            <div class="column-section img-column">
+              <div class="img-column-layout">
+                <section>
+                  <h4 class="title-h1">Scarica l’app Edison Plug&Go</h4>
+                  <p class="headline">
+                    Potrai visualizzare sul tuo smartphone le stazioni di
+                    ricarica più vicine a te
+                  </p>
+                </section>
+                <div class="download-app">
+                  <a href="#">
+                    <img src="./assets/google_store.svg" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/apple_store.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-link="professionisti-imprese">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">OFFERTE EDISON</h4>
+              <button class="btn btn-small btn-luce-gas headline">
+                <span>Luce e Gas</span>
+              </button>
+              <button class="btn btn-small btn-luce headline">
+                <span>Luce</span>
+              </button>
+              <button class="btn btn-small btn-gas headline">
+                <span>Gas</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">PRODOTTI & SERVIZI</h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-climatizzatore headline"
+              >
+                <span>Climatizzatore</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-climatizzatore headline"
+              >
+                <span>Pronto intervento</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">ENERGIA SOLARE</h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-fotovoltaico headline"
+              >
+                <span>Fotovoltaico</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-sistemi-accumulo headline"
+              >
+                <span>Batterie</span>
+              </button>
+              <div class="link-generale">
+                <h4 class="headline">Superbonus 110%</h4>
+              </div>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">
+                MOBILIT&Aacute; ELETTRICA
+              </h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-wallbox headline"
+              >
+                <span>Wallbox</span>
+              </button>
+              <button
+                class="btn btn-small btn-primary-orange btn-auto-elettriche headline"
+              >
+                <span>Veicoli elettrici</span>
+              </button>
+              <div class="link-generale">
+                <h4 class="headline">Installazione della colonnina</h4>
+              </div>
+            </div>
+          </div>
+          <div data-link="condomini">
+            <div class="column-section">
+              <h4 class="heading-section small-caps">LUCE & GAS</h4>
+              <button
+                class="btn btn-small btn-primary-orange btn-luce headline"
+              >
+                <span>Luce</span>
+              </button>
+              <button class="btn btn-small btn-primary-orange btn-gas headline">
+                <span>Gas</span>
+              </button>
+            </div>
+            <div class="column-section">
+              <h4 class="heading-section small-caps">INFORMAZIONI UTILI</h4>
+              <div class="link-generale">
+                <h4 class="headline">Comunit&aacute; Energetiche</h4>
+              </div>
+            </div>
+          </div>
+        </header>
+        <footer>
+          <div class="helper">
+            <div class="helper-icon-container">
+              <div class="helper-icon helper-icon-phone"></div>
+            </div>
+            <div class="helper-text">
+              <h4 class="headline">Trova i <span>contatti</span></h4>
+            </div>
+          </div>
+          <div class="helper">
+            <div class="helper-icon-container">
+              <div class="helper-icon helper-icon-support"></div>
+            </div>
+            <div class="helper-text">
+              <h4 class="headline">Cerca nelle <span>FAQ</span></h4>
+            </div>
+          </div>
+          <div class="helper">
+            <div class="helper-icon-container">
+              <div class="helper-icon helper-icon-pin"></div>
+            </div>
+            <div class="helper-text">
+              <h4 class="headline">
+                Vieni a trovarci negli <span>Store</span>
+              </h4>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </header>
+
+    <!-- QUI MOBILE MENU-->
+    <div id="header-smartphone">
+      <header class="mobile-menu">
+        <div data-id="nav-mobile">
+          <div class="mobile-menu-container">
+            <div>
+              <ul>
+                <button class="btn btn-rounded-small btn-home1" ><img src="./assets/home.svg" alt=""></button>
+                <button class="btn btn-rounded-small btn-private-area" />
+              </ul>
+            </div>
+            <div>
+              <span class="icon icon-logo" />
+            </div>
+            <div>
+              <ul>
+                <button class="btn btn-rounded-small btn-search" />
+                <button
+                  class="btn btn-rounded-small btn-burger-menu"
+                  id="burger-section"
+                  onclick="ToggleMenu()"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main>
+      <div id="conteiner_smartphone">
+        <div class="contenitore_pricipale_home_smarphone">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'Casa')"
+              id="defaultOpen"
+            >
+            <div class="flex">
+              <img src="./assets/home.svg" alt="" style="height:1.5rem;"/>
+              <p style="margin-top:5px;margin-left:5px;"> Casa</p>
+            </div>
+              
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Business')">
+              <div class="flex">
+                <img src="./assets/business.svg" alt="" style="height:1.5rem;"/>
+                <p style="margin-top:5px;margin-left:5px;"> Business</p>
+              </div>
+             
+            </button>
+          </div>
+
+          <div id="Casa" class="tabcontent">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="topright"
+            ></span>
+            <div class="conteniner_casa_home">
+              <div class="luce_gas">
+                <img src="./assets/light and gas.svg" alt="" style="height:3.5rem;margin-bottom:0.5rem;" />
+                <p>Luce e Gas</p>
+              </div>
+              <div class="second_section_protezione_caldaia">
+                <div>
+                  <img src="./assets/chiave.svg" alt="" style="height:41px;margin-bottom:0.5rem;"/>
+                  <p>Protezione </p>
+                    <p> & Interventi</p>
+                </div>
+                <div>
+                  <img src="./assets/temperature.svg" alt="" style="height:41px;margin-bottom:0.5rem;" />
+                  <p>Caldaia & Clima</p>
+                </div>
+              </div>
+            </div>
+            <div class="second_section_protezione_caldaia">
+              <div>
+                <img src="./assets/solar panel.svg" alt="" style="height:41px;margin-bottom:0.5rem;"/>
+                <p>Energia solare</p>
+              </div>
+              <div>
+                <img src="./assets/e-mobility.svg" alt=""  style="height:41px;margin-bottom:0.5rem;"/>
+                <p>Mobilita' elettrica</p>
+              </div>
+            </div>
+            <div class="ScopricontattiFAQeStore">
+              <p>Scopri contatti, FAQ e Store</p>
+            </div>
+
+            <div class="info_contatti">
+              <p>Vuoi sapere di più sulle offerte?</p>
+              <div class="info_buttons">
+                <button>chat</button>
+                <button> Ti chiamiamo noi</button>
+              </div>
+            </div>
+              
+            </div>
+          </div>
+
+          <div id="Business" class="tabcontent">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="topright"
+              >
+              </span
+            >
+            <div class="conteniner_casa_home_1">
+            
+              <div class="second_section_protezione_caldaia1">
+                <div>
+                  <img src="./assets/chiave.svg" alt="" style="height:41px;margin-bottom:0.5rem;"/>
+                
+                    <p>Protezione </p>
+                    <p> & Interventi</p>
+                
+                 
+                </div>
+                <div>
+                  <img src="./assets/temperature.svg" alt="" style="height:41px;margin-bottom:0.5rem;" />
+                  <p>Caldaia & Clima</p>
+                </div>
+              </div>
+            </div>
+            <div class="second_section_protezione_caldaia1">
+              <div>
+                <img src="./assets/solar panel.svg" alt="" style="height:41px;margin-bottom:0.5rem;"/>
+                <p>Energia solare</p>
+              </div>
+              <div>
+                <img src="./assets/e-mobility.svg" alt=""  style="height:41px;margin-bottom:0.5rem;"/>
+                <p>Mobilita' elettrica</p>
+              </div>
+            </div>
+            <div class="ScopricontattiFAQeStore">
+              <p>Scopri contatti, FAQ e Store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
